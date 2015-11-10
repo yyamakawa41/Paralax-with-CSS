@@ -1,0 +1,35 @@
+.parallax{
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 300px;
+	font-size: 30px;
+}
+
+.parallax-layer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 100vh 0;
+}
+
+/*1 + (translateZ * -1) / perspective */
+
+.parallax-base-layer{
+	transform: translateZ(0);
+	background-color: white;
+	opacity: .4;
+	}
+
+.parallax-back-layer{
+	transform: translateZ(-1px) scale(2);
+	background-color: blue;
+}
+
+.holder-text{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
