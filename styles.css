@@ -6,6 +6,12 @@
 	font-size: 30px;
 }
 
+.parallax-group{
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+}
+
 .parallax-layer{
 	position: absolute;
 	top: 0;
@@ -19,13 +25,16 @@
 
 .parallax-base-layer{
 	transform: translateZ(0);
-	background-color: white;
-	opacity: .4;
+	z-index: 4;
 	}
 
-.parallax-back-layer{
-	transform: translateZ(-1px) scale(2);
-	background-color: blue;
+.parallax-background-layer{
+	transform: translateZ(-300px) scale(2);
+	z-index: 3;
+}
+
+.parallax-front-layer{
+	transform: translateZ(90px) scale(.7);
 }
 
 .holder-text{
