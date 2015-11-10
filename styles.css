@@ -42,3 +42,30 @@
 	left: 50%;
 	top: 50%;
 }
+
+#group1 .parallax-base-layer{
+	background: blue;
+}
+
+#group2 .parallax-background-layer{
+	background: red;
+}
+
+#group3 .parallax-front-layer{
+	background: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
